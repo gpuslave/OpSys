@@ -53,7 +53,7 @@ if "%dir%"=="" (
 set /a "count=0"
 
 for %%f in ("%dir%\*.txt") do (
-    echo %%f
+    echo %%~dpnxf
     set /a "count+=1"
 )
 
